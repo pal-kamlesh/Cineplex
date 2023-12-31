@@ -21,8 +21,7 @@ export const MovieDetail = () => {
       setMovie(json);
     }
     fetchDetails();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [param.id]);
   useDocTitle(`Result for ${movie?.title ?? ""}`);
   return (
     <main>
