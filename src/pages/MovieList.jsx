@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { Card } from "../components/Card";
 import { Pagination } from "../components/Pagination";
 import { useDocTitle } from "../hooks/useDocTitle";
@@ -9,9 +9,10 @@ export const MovieList = ({ path, title }) => {
   const [page, setPage] = useState(1);
   const { data } = useFetch({ path, page });
   useDocTitle(title);
-  useEffect(() => {
+  useLayoutEffect(() => {
     setPage(1);
   }, [path]);
+
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">

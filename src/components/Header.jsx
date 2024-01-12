@@ -32,11 +32,11 @@ export const Header = () => {
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-center space-x-1 rtl:space-x-reverse"
           >
-            <img src={Logo} className="h-8" alt="Cinemate Logo" />
+            <img src={Logo} className=" h-9" alt="Cinemate Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Cinemate
+              Cineplex
             </span>
           </Link>
           <div className="flex md:order-2">
